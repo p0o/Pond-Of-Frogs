@@ -17,8 +17,8 @@ file with any thoughts and technologies you have used.
 If you have used anything like
 [composer](https://getcomposer.org/),
 [bower](http://bower.io/),
-[npm](https://www.npmjs.com/)
-[junit](http://junit.org/)
+[npm](https://www.npmjs.com/),
+[junit](http://junit.org/),
 [phpunit](https://phpunit.de/)
 then please add instructions on how to run them in the notes file.
 
