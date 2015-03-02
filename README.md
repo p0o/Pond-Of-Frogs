@@ -1,6 +1,6 @@
-# Frog Technical Test
+# FrogAsia Technical Test
 
-**Thank you for applying to be a developer at Frog.**
+**Thank you for applying to be a developer at FrogAsia.**
 
 This tech test will help us evaluate your skills.
 
