@@ -9,7 +9,7 @@ There is no time limit attached to this test, so take your time and be thorough.
 ## Instructions
 
 - There is no right or wrong way of completing this test.
-- Your solution may be as simple or complex you like.
+- Your solution may be as simple or complex you like but please ensure you write enough code for us to judge your ability, not the ability of a framework.
 - You may use any technologies you need and/or require, but please justify your choices in your closing comments.
 - Please work out of the **`src`** directory as your root.
 - Once you have completed your tech test, please fill out the **`NOTES.md`** with any closing comments you would like to add.
