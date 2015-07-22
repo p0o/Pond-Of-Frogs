@@ -1,0 +1,28 @@
+{
+  "name": "frogasia",
+  "version": "0.0.1",
+  "description": "Managing an awesome pond of frogs",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://bitbucket.org/frogasia/tech_test_blank.git"
+  },
+  "author": "Pooria Atarzadeh",
+  "license": "MIT",
+  "dependencies": {
+    "angular": "~1.4.3"
+  },
+  "scripts": {
+    "start-scss": "compass watch --sass-dir src/scss --css-dir build/css",
+    "start-js": "watchify src/app.js -o build/app.js",
+    "start": "npm run start-scss & npm run start-js"
+
+  },
+  "devDependencies": {
+    "browserify": "~11.0.0",
+    "watchify": "~3.3.0"
+  }
+}
