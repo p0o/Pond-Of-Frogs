@@ -1,6 +1,148 @@
-$red : '#eeeee';
+$primary_text : #467520;
+$primary_color : #8cd934;
+$primary_dark : #6ccc2b;
+$accent_color : #FFEB3B;
+$light_color : #E5EDDF;
+$white : #FFFFFF;
 
-test {
-	background: $red;
+@import url(http://fonts.googleapis.com/css?family=Roboto:500,700);
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+body {
+  background:$primary_color;
+  font: 300 1.2em/1.2 'Roboto', sans-serif;
+  color: $primary_text;
+}
+.btn {
+  -webkit-border-radius: 20;
+  -moz-border-radius: 20;
+  border-radius: 20px;
+  font-family: 'Roboto';
+  color: #ffffff;
+  font-size: 1.1em;
+  background: $primary_color;
+  text-decoration: none;
+  width:140px;
+  padding:5px;
+  margin: 15px;
+  border:0;
+  cursor:pointer;
+  float:left;
+  &:hover {
+    background: $primary_dark;
+    text-decoration: none;
+  }
 }
 
+#result {
+	float:right;
+	margin: 15px;
+	width:60%;
+	transition:width 0.8s;
+	img {
+		height:40px;
+		display:inline-block;
+	}
+	&.started {
+		width:40%;
+	}
+	&:hover{
+		background:inherit!important;
+		color:inherit!important;
+	}
+}
+
+#items {
+  background:$white;
+  max-width: 60%;
+  display: flex;
+  flex-direction: column;
+  text-align:center;
+  margin:0 auto;
+  border-radius: 20px;
+  font-size:0.9em;
+  div {
+  	position:relative;
+  	padding:5px;
+    margin: 5px;
+    height:50px;
+    transition: all 0.5s;
+    span {
+      vertical-align:middle;
+      display:inline-block;
+      width:24%;
+      text-align:center;
+      cursor:pointer;
+      img {
+      	height:40px;
+      }
+    }
+    &:hover {
+    	background:lighten($accent_color,20%);
+    	color:$primary_text;
+    }
+  }
+  div.b-title {
+  	background: $accent_color;
+	color: $primary_dark;
+	display:block;
+	height:30px;
+	order: 1;
+  }
+  div.barcelona {
+    order: 2;
+    -webkit-animation: show2 .4s;
+    animation: show2 0.5s;
+  }
+  div.m-title {
+  	background: $accent_color;
+	color: $primary_dark;
+	display:block;
+	height:30px;
+	order: 3;
+  }
+  div.real-madrid {
+    order: 4;
+    -webkit-animation: show .6s;
+    animation: show 0.6s;
+  }
+  
+}
+@keyframes show {
+  	0% {
+  		opacity:0;
+  	}
+  	50% {
+  		opacity:1;
+  		margin:7px 20px;
+  	}
+}
+@-webkit-keyframes show {
+  	0% {
+  		opacity:0;
+  	}
+  	50% {
+  		opacity:0.5;
+  		margin:7px 20px;
+  	}
+}
+@keyframes show2 {
+  	0% {
+  		opacity:0;
+  	}
+  	50% {
+  		opacity:1;
+  		margin:7px 20px;
+  	}
+}
+@-webkit-keyframes show2 {
+  	0% {
+  		opacity:0;
+  	}
+  	50% {
+  		opacity:0.5;
+  		margin:7px 20px;
+  	}
+}

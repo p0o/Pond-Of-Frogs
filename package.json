@@ -4,7 +4,12 @@
   "description": "Managing an awesome pond of frogs",
   "main": "index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start-scss": "compass watch --sass-dir src/scss --css-dir build/css",
+    "start-js": "watchify src/app.js -o build/app.js",
+    "start": "npm run start-scss & npm run start-js",
+    "build-scss": "compass compile -e production --force --sass-dir src/scss --css-dir build/css",
+    "build-js": "browserify src/app.js | uglifyjs -cm > build/app.js",
+    "build": "npm run build-scss & npm run build-js"
   },
   "repository": {
     "type": "git",
@@ -15,14 +20,9 @@
   "dependencies": {
     "angular": "~1.4.3"
   },
-  "scripts": {
-    "start-scss": "compass watch --sass-dir src/scss --css-dir build/css",
-    "start-js": "watchify src/app.js -o build/app.js",
-    "start": "npm run start-scss & npm run start-js"
-
-  },
   "devDependencies": {
     "browserify": "~11.0.0",
-    "watchify": "~3.3.0"
+    "watchify": "~3.3.0",
+    "uglify-js": "~2.4.24"
   }
 }

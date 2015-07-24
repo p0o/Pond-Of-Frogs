@@ -3,11 +3,31 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Awesome Pond of Frogs</title>
+    <title>Awesome Pond of Frogs - Pooria Atarzadeh</title>
     <link rel="stylesheet" href="build/css/style.css" />
     <script type="text/javascript" src="build/app.js"></script>
   </head>
   <body>
-  <div ng-controller="PondController">{{msg}}</div>
+
+    <div ng-controller="PondController" id="items">
+      <!-- Top header -->
+      <header>
+        <button class="btn" ng-click="newFrog()">Add Frog</button>
+        <div id="result" ng-class="{started: isStarted}">
+          <img src="build/img/barcelona.png"><span>{{members['barcelona']}}</span>
+          <span>{{members['real-madrid']}}</span><img src="build/img/madrid.png">
+        </div>
+      </header>
+      <!-- Frogs list -->
+      <div ng-repeat="frog in frogs"  ng-class="frog.team">
+          <span title="Change Name" ng-click="changeName(frog.$$hashKey)">{{frog.name}}</span>
+          <span title="Change Gender!" ng-click="changeGender(frog.$$hashKey)">{{frog.gender}}</span>
+          <span title="Change Team" ng-click="changeTeam(frog.$$hashKey)"><img ng-src="{{frog.team | showTeamIcon}}"></span>
+          <span title="Age - Click to kill" ng-click="changeToDead(frog.$$hashKey)">{{frog.age | showTime}}</span>
+      </div>
+      <div class="b-title">Barcelona Fans</div>
+      <div class="m-title">Real Madrid Fans</div>
+    </div>
+
   </body>
 </html>
