@@ -3,6 +3,9 @@ Add your comments / notes and thoughts to this doc
 
 Any special instructions to running your code?
 -->
+# What is this?
+It's a simple app which you can add frogs to the pond. Each frog have a random name, a gender and an age which is incrementing after birth. Every frog also is a fan of a football club selected randomly. You can change each behavior by clicking on the behavior and by clicking on age the frog will die.
+
 # Getting Started
 This project is created with Angular JS and is using a small stack of development dependencies like compass,browserify,watchify,uglify-js and npm to handle the development environment. Stylesheets are also written with Sass but no CSS framework is used in the project.
 
