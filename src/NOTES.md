@@ -16,7 +16,8 @@ NPM package manager is needed to install project dependencies and start automati
 ```bash
 npm install
 ```
-You can start changing files by running this command. It will automatically detect all changes and output them into /build directory. This command monitor Sass and JS files in real time.
+Now please install compass if you didn't already installed it on your machine. Follow the instructions [here](http://compass-style.org/install/).
+After having compass in your command line you can start changing files by running below command. It will automatically detect all changes and output them into /build directory. This command monitor Sass and JS files in real time.
 
 ```bash
 npm run start
@@ -27,4 +28,4 @@ And in order to output files in production quality (compressed css and uglified 
 npm run build
 ```
 
-Thanks for using!
+Thanks for using! feel free to send me your feedback to hello [at] pooria.co.
